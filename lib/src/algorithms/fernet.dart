@@ -87,6 +87,7 @@ class Fernet implements Algorithm {
   }
 
   void _verifySignature(Uint8List data) {
+    print('Github repo fork');
     final length = data.length;
     final parts = data.sublist(0, length - 32);
     final _digest = data.sublist(length - 32);
