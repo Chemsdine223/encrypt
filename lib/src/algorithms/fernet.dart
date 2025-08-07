@@ -38,6 +38,7 @@ class Fernet implements Algorithm {
     Uint8List? associatedData,
     int? ttl,
   }) {
+    print('Using the github repo fork');
     final data = encrypted.bytes;
     if (data.first != 0x80) {
       throw StateError('Invalid token');
