@@ -2,7 +2,7 @@ part of encrypt;
 
 /// Wraps the Fernet Algorithm.
 class Fernet implements Algorithm {
-  final _maxClockSkew = 600;
+  final _maxClockSkew = 60;
 
   late final Key _signKey;
   late final Key _encryptionKey;
