@@ -46,6 +46,7 @@ class Encrypter {
     IV? iv,
     Uint8List? associatedData,
   }) {
+    print('Using the github repo fork');
     return convert.utf8.decode(
       decryptBytes(encrypted, iv: iv, associatedData: associatedData),
       allowMalformed: true,
