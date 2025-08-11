@@ -39,6 +39,8 @@ class Fernet implements Algorithm {
     int? ttl,
   }) {
     print('Using the github repo fork');
+    print('_maxClockSkew $_maxClockSkew');
+    
     final data = encrypted.bytes;
     if (data.first != 0x80) {
       throw StateError('Invalid token');
